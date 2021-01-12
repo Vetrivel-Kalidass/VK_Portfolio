@@ -1,0 +1,59 @@
+/* POPPINS GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* BODY ALIGNMENT FIXED */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* CONTENT BLOCK */ 
+section{
+    padding: 80px;
+}
+
+/* BANNER BLOCK */
+.banner{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    /* background: url("images/bannerImg.jpeg"); */
+    background: linear-gradient(45deg, black, transparent), url(images/bannerImg.jpeg);
+    background-size: cover;
+    background-position: right center;
+}
+.banner h2{
+    font-size: 2.5em;
+    color: rgb(252, 252, 252);
+    font-weight: 300;
+    line-height: 1.5em;
+}
+.banner h2 span{
+    font-size: 1.2em;
+    color: #efefef;
+}
+.banner h3{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+/* BUTTON */
+.bton{
+    position: relative;
+    background-color: #009e66;
+    display: inline-block;
+    color: #000;
+    margin-top: 20px;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+}
