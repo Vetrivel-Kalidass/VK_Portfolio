@@ -157,3 +157,32 @@ img.profile-pic {
 img{
     max-width: 100%;
 }
+
+/* SERVICES BLOCK */
+.services{
+    background: #111;
+}
+.heading.white p{
+    color: #fff;
+}
+.services .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.services .content .servicesBox{
+    color: #fff;
+    background: #161616;
+    margin: 10px 15px;
+    padding: 30px 15px;
+    text-align: center;
+    max-width: 360px;
+}
+.services .content .servicesBox:hover{
+    border-bottom: 2px solid #009e66;
+    cursor: pointer;
+}
+.services .content .servicesBox .fa{
+    color: #009e66;
+}
