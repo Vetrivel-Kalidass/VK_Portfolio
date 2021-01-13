@@ -221,3 +221,41 @@ img{
     color: #fff;
 }
 
+/* TESTIMONIAL BLOCK */
+.testimonial{
+    background: #111;
+}
+.testimonial .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.testimonial .content .testimonialBox{
+    background: #161616;
+    margin: 20px;
+    padding: 60px 40px;
+    max-width: calc(50% - 40px);
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+.testimonial .content .testimonialBox:hover{
+    border-bottom: 2px solid #009e66;
+}
+.testimonial .content .testimonialBox p{
+    color: #fff;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 24px;
+}
+.testimonial .content .testimonialBox h3{
+    color: #009e66;
+    margin-top: 40px;
+    text-align: end;
+    font-weight: 200;
+    font-style: italic;
+    line-height: 1.7em;
+    font-size: 20px;
+}
