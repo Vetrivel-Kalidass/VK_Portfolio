@@ -186,3 +186,38 @@ img{
 .services .content .servicesBox .fa{
     color: #009e66;
 }
+
+/* WORK BLOCK */
+.work .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.work .content .workBox{
+    width: 500px;   
+    padding: 20px;
+}
+.work .content .workBox img{
+    max-width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+.work .content .workBox img:hover{
+    box-shadow: 0 0 20px 5px #ccc;
+    transform: scale(1.008);
+    transition: 0.5s;
+}
+.work .content .workBox p{
+    text-align: center;    
+}
+.work .content .workBox a:link,
+.work .content .workBox a:visited,
+.work .content .workBox a:active{
+    color: #161616;
+    text-decoration: none;
+    font-weight: 600;
+}
+.white-clr{
+    color: #fff;
+}
+
