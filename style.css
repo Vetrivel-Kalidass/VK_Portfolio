@@ -238,6 +238,7 @@ img{
     max-width: calc(50% - 40px);
     border-bottom-left-radius: 20%;
     border-bottom-right-radius: 20%;
+    cursor: pointer;
 }
 .testimonial .content .testimonialBox:hover{
     border-bottom: 2px solid #009e66;
@@ -258,4 +259,107 @@ img{
     font-style: italic;
     line-height: 1.7em;
     font-size: 20px;
+}
+
+/* CONTACT BLOCK */
+
+/* CONTACT ACTION */
+.contact{
+    background: #111;
+}
+.formBox{
+    min-width: 60%;
+}
+.formBox form{
+    display: flex;
+    flex-direction: column;
+}
+.formBox form h3,
+.contact-info h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.formBox form input,
+.formBox form textarea{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    outline: none;
+    background: #161616;
+    color: #fff;
+    resize: vertical;
+}
+.formBox form input:focus,
+.formBox form textarea:focus{
+    border-bottom: 1px solid #009e66;
+    transition: 0.5s;
+}
+.formBox form input::placeholder,
+.formBox form textarea::placeholder{
+    color: #999;
+}
+.formBox form input[type="submit"]{
+    background: #009e66;
+    max-width: 250px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 50px;
+    letter-spacing: 2px;
+}
+
+/* CONTACT INFO */
+.contact-info{
+    min-width: 40%;
+}
+.contact-info p{
+    color: #999;
+}
+.contact-infoBox{
+    position: relative;
+}
+.contact-infoBox .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.contact-info .box .icon{
+    color: #fff;
+    min-width: 40px;
+    padding-top: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 24px;
+}
+.contact-info .box .text{
+    color: #999;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+}
+.contact-info .box .text h3{
+    color: #009e66;
+    font-weight: 500;
+    margin: 0;
+}
+.contact-info .box .text p, address{
+    font-style: normal;
+    font-weight: 300;
+    color: #999;
+}
+.contact-infoBox .socialBox{
+    display: flex;
+    flex-direction: row;
+    padding-left: 60px;
+    letter-spacing: 15px;
+}
+.contact-infoBox .socialBox .fa{
+    font-size: 42px;
+    color: #009e66;
+    cursor: pointer;
 }
