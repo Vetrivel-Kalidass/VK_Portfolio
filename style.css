@@ -47,14 +47,19 @@ header ul li a{
     position: relative;
     display: inline-block;
     margin: 0 15px;
+    font-size: 18px;
+    text-transform: uppercase;
     text-decoration: none;
     color: #fff;
+}
+header ul li a:hover{
+    border-bottom: #f5c71a 2px solid;
 }
 
 /* CONTENT BLOCK */ 
 header.shrink{
     background: #fff;
-    padding: 20px 100px;
+    padding: 10px 100px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 header.shrink .logo,
@@ -78,7 +83,7 @@ section{
     /* background: url("images/bannerImg.jpeg"); */
     background: linear-gradient(45deg, black, transparent), url(images/bannerImg.jpeg);
     background-size: cover;
-    background-position: right center;
+    background-position: center;
 }
 .banner h2{
     font-size: 2.5em;
@@ -99,9 +104,9 @@ section{
 /* BUTTON */
 .bton{
     position: relative;
-    background-color: #009e66;
+    background-color: #f5c71a;
     display: inline-block;
-    color: #000;
+    color: #111;
     margin-top: 20px;
     padding: 10px 30px;
     text-decoration: none;
@@ -109,6 +114,7 @@ section{
     letter-spacing: 2px;
     font-weight: 500;
     font-size: 18px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.25);
 }
 
 /* ABOUT ME */
@@ -119,12 +125,12 @@ section{
     color: #111;
 }
 .heading p{
-    font-style: italic;
+    /* font-style: italic; */
     font-size: 14px;
 }
 .heading h2{
     font-size: 3em;
-    color: #009e66;
+    color: #f5c71a;
 }
 .content{
     display: flex;
@@ -137,8 +143,6 @@ section{
 img.profile-pic {
     width: 300px;
     height: 350px;
-    border-top-left-radius: 30%;
-    border-bottom-right-radius: 30%;
 }
 .contentBox h2{
     font-weight: 300;
@@ -150,13 +154,6 @@ img.profile-pic {
     flex-direction: row;
     align-items: center;
 }
-.bton.round{
-    border-radius: 50px;
-    -webkit-border-radius:50px;
-    -moz-border-radius:50px;
-    -ms-border-radius:50px;
-    -o-border-radius:50px;
-}
 .bt{
     margin-top: 20px;
 }
@@ -167,20 +164,20 @@ img{
     max-width: 100%;
 }
 
-/* SERVICES BLOCK */
-.services{
+/* MY SKILLS BLOCK */
+.mySkills{
     background: #111;
 }
 .heading.white p{
     color: #fff;
 }
-.services .content{
+.mySkills .content{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
 }
-.services .content .servicesBox{
+.mySkills .content .skillBox{
     color: #fff;
     background: #161616;
     margin: 10px 15px;
@@ -188,12 +185,12 @@ img{
     text-align: center;
     max-width: 360px;
 }
-.services .content .servicesBox:hover{
-    border-bottom: 2px solid #009e66;
+.mySkills .content .skillBox:hover{
+    border-bottom: 2px solid #f5c71a;
     cursor: pointer;
 }
-.services .content .servicesBox .fa{
-    color: #009e66;
+.mySkills .content .skillBox .fa{
+    color: #f5c71a;
 }
 
 /* WORK BLOCK */
@@ -258,7 +255,7 @@ img{
     cursor: pointer;
 }
 .testimonial .content .testimonialBox:hover{
-    border-bottom: 2px solid #009e66;
+    border-bottom: 2px solid #f5c71a;
 }
 .testimonial .content .testimonialBox p{
     color: #fff;
@@ -269,7 +266,7 @@ img{
     line-height: 24px;
 }
 .testimonial .content .testimonialBox h3{
-    color: #009e66;
+    color: #f5c71a;
     margin-top: 40px;
     text-align: end;
     font-weight: 200;
@@ -312,7 +309,7 @@ img{
 }
 .formBox form input:focus,
 .formBox form textarea:focus{
-    border-bottom: 1px solid #009e66;
+    border-bottom: 1px solid #f5c71a;
     transition: 0.5s;
     -webkit-transition:0.5s;
     -moz-transition:0.5s;
@@ -324,7 +321,7 @@ img{
     color: #999;
 }
 .formBox form input[type="submit"]{
-    background: #009e66;
+    background: #f5c71a;
     max-width: 250px;
     cursor: pointer;
     font-weight: 600;
@@ -368,7 +365,7 @@ img{
     font-weight: 300;
 }
 .contact-info .box .text h3{
-    color: #009e66;
+    color: #f5c71a;
     font-weight: 500;
     margin: 0;
 }
@@ -385,7 +382,7 @@ img{
 }
 .contact-infoBox .socialBox .fa{
     font-size: 42px;
-    color: #009e66;
+    color: #f5c71a;
     cursor: pointer;
 }
 
@@ -401,7 +398,7 @@ footer.copyright{
 @media(max-width: 991px){
 
     header, header.shrink{
-        padding: 20px 50px;
+        padding: 10px 20px;
     }
     header .menu{
         display: none;
@@ -491,11 +488,11 @@ footer.copyright{
         margin-top: 10px;
         padding: 10px 20px;
         font-size: 16px;
-        border-radius: 50px;
+        /* border-radius: 50px;
         -webkit-border-radius:50px;
         -moz-border-radius:50px;
         -ms-border-radius:50px;
-        -o-border-radius:50px;
+        -o-border-radius:50px; */
     }
     .content{
         flex-direction: column;
@@ -517,7 +514,7 @@ footer.copyright{
     .heading h2{
         font-size: 24px;
     }
-    .services .content .servicesBox{
+    .mySkills .content .skillBox{
         margin: 10px;
     }
     .contact-info{
@@ -534,3 +531,8 @@ footer.copyright{
         margin: 30px;
     }
 } 
+/**SHARED STYLES**/
+
+.card {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
