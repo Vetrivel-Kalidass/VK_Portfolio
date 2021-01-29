@@ -189,7 +189,7 @@ img{
     border-bottom: 2px solid #f5c71a;
     cursor: pointer;
 }
-.mySkills .content .skillBox .fa{
+.mySkills .content .skillBox > i{
     color: #f5c71a;
 }
 
