@@ -238,12 +238,12 @@
             </div>
             <!----- CONTACT ACTION ------->
             <div class="formBox">
-                <form>
+                <form name="textMeForm" onsubmit="textMe(event)">
                     <h3>Text Me</h3>
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email">
-                    <textarea name="" id="" placeholder="Your message" rows="6"></textarea>
-                    <input type="submit" value="Send Message" name="">
+                    <input type="text" name="viewerName" placeholder="Full Name">
+                    <input type="email" name="viewerMail" placeholder="Email">
+                    <textarea name="messages" id="messages" placeholder="Your message" rows="6"></textarea>
+                    <input type="submit" value="Send Message">
                 </form>
             </div>
         </div>
