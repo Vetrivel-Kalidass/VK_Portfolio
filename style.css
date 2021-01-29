@@ -193,22 +193,22 @@ img{
     color: #f5c71a;
 }
 
-/* WORK BLOCK */
-.work .content{
+/* PROJECTS BLOCK */
+.projects .content{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
 }
-.work .content .workBox{
-    width: 500px;   
+.projects .content .projectBox{
+    width: 300px;   
     padding: 20px;
 }
-.work .content .workBox img{
+.projects .content .projectBox img{
     max-width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.4);
 }
-.work .content .workBox img:hover{
+.projects .content .projectBox img:hover{
     box-shadow: 0 0 20px 5px #ccc;
     transform: scale(1.008);
     -webkit-transform:scale(1.008);
@@ -221,12 +221,12 @@ img{
     -ms-transition:0.5s;
     -o-transition:0.5s;
 }
-.work .content .workBox p{
+.projects .content .projectBox p{
     text-align: center;    
 }
-.work .content .workBox a:link,
-.work .content .workBox a:visited,
-.work .content .workBox a:active{
+.projects .content .projectBox a:link,
+.projects .content .projectBox a:visited,
+.projects .content .projectBox a:active{
     color: #161616;
     text-decoration: none;
     font-weight: 600;
@@ -348,6 +348,8 @@ img{
     padding: 20px 0;
     display: flex;
 }
+/* .contact-info a.box{
+} */
 .contact-info .box .icon{
     color: #fff;
     min-width: 40px;
@@ -364,26 +366,19 @@ img{
     flex-direction: column;
     font-weight: 300;
 }
-.contact-info .box .text h3{
+.contact-info .box{
     color: #f5c71a;
     font-weight: 500;
+    text-decoration: none;
     margin: 0;
 }
-.contact-info .box .text p, address{
+.contact-info .box:hover{
+    border-left: 2px solid #f5c71a;
+}
+.contact-info .box .text p{
     font-style: normal;
     font-weight: 300;
     color: #999;
-}
-.contact-infoBox .socialBox{
-    display: flex;
-    flex-direction: row;
-    padding-left: 60px;
-    letter-spacing: 15px;
-}
-.contact-infoBox .socialBox .fa{
-    font-size: 42px;
-    color: #f5c71a;
-    cursor: pointer;
 }
 
 /* FOOTER BLOCK */
@@ -535,4 +530,7 @@ footer.copyright{
 
 .card {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+.fnt-black{
+      color: #161616 !important;
   }
