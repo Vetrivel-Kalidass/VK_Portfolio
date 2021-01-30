@@ -338,8 +338,6 @@ img{
 .formBox form input[type="submit"]:hover{
     color: #161616;
     background: #f5c71a;
-    border-left: 1px solid #999;
-    border-right: 1px solid #999;
 }
 
 /* CONTACT INFO */
