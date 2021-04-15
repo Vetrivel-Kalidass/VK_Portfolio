@@ -82,16 +82,17 @@ section{
     background: #111;
     /* background: url("images/bannerImg.jpeg"); */
     background: linear-gradient(45deg, black, transparent), url(images/bannerImg.jpeg);
+    /* background: linear-gradient(55deg, #212121 0%, #212121 40%, #323232 calc(40% + 1px), #323232 60%, #ffe69f calc(60% + 1px), #ffe69f 70%, #f5c71a calc(70% + 1px), #f5c71a 100%); */
     background-size: cover;
     background-position: center;
 }
-.banner h2{
+.banner h1{
     font-size: 2.5em;
     color: rgb(252, 252, 252);
     font-weight: 300;
     line-height: 1.5em;
 }
-.banner h2 span{
+.banner h1 span{
     font-size: 1.2em;
     color: #efefef;
 }
@@ -200,15 +201,15 @@ img{
     flex-wrap: wrap;
     flex-direction: row;
 }
-.projects .content .projectBox{
+.projects .content .project-tile{
     width: 300px;   
     padding: 20px;
 }
-.projects .content .projectBox img{
+.projects .content .project-tile img{
     max-width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.4);
 }
-.projects .content .projectBox img:hover{
+.projects .content .project-tile img:hover{
     box-shadow: 0 0 20px 5px #ccc;
     transform: scale(1.008);
     -webkit-transform:scale(1.008);
@@ -221,58 +222,18 @@ img{
     -ms-transition:0.5s;
     -o-transition:0.5s;
 }
-.projects .content .projectBox p{
+.projects .content .project-tile p{
     text-align: center;    
 }
-.projects .content .projectBox a:link,
-.projects .content .projectBox a:visited,
-.projects .content .projectBox a:active{
+.projects .content .project-tile a:link,
+.projects .content .project-tile a:visited,
+.projects .content .project-tile a:active{
     color: #161616;
     text-decoration: none;
     font-weight: 600;
 }
 .white-clr{
     color: #fff;
-}
-
-/* TESTIMONIAL BLOCK */
-.testimonial{
-    background: #111;
-}
-.testimonial .content{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-.testimonial .content .testimonialBox{
-    background: #161616;
-    margin: 20px;
-    padding: 60px 40px;
-    max-width: calc(50% - 40px);
-    border-bottom-left-radius: 20%;
-    border-bottom-right-radius: 20%;
-    cursor: pointer;
-}
-.testimonial .content .testimonialBox:hover{
-    border-bottom: 2px solid #f5c71a;
-}
-.testimonial .content .testimonialBox p{
-    color: #fff;
-    font-style: italic;
-    font-size: 18px;
-    font-weight: 100;
-    font-family: 'Times New Roman', Times, serif;
-    line-height: 24px;
-}
-.testimonial .content .testimonialBox h3{
-    color: #f5c71a;
-    margin-top: 40px;
-    text-align: end;
-    font-weight: 200;
-    font-style: italic;
-    line-height: 1.7em;
-    font-size: 20px;
 }
 
 /* CONTACT BLOCK */
@@ -476,7 +437,7 @@ footer.copyright{
     .banner{
         padding: 150px 50px 100px;
     }
-    .banner h2{
+    .banner h1{
         font-size: 1.5em;
     }
     .banner h3{
@@ -526,13 +487,6 @@ footer.copyright{
         flex-direction: column;
     }
 }
-@media(max-width: 768px){
-    .testimonial .content .testimonialBox{
-        max-width: calc(100% - 20px);
-        padding: 40px 20px;
-        margin: 30px;
-    }
-} 
 /**SHARED STYLES**/
 
 .card {
