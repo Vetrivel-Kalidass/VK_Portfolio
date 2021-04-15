@@ -1,6 +1,6 @@
 /**HEADER WILL SHRINK AND EXPAND WHILE SCROLL DOWN */
 window.addEventListener("scroll", function() {
-    var header = document.querySelector("header");
+    var header = document.querySelector("nav");
     header.classList.toggle("shrink", window.scrollY > 0);
 })
 

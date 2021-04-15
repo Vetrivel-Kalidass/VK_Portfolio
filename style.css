@@ -11,7 +11,7 @@
 }
 
 /* HEADER BLOCK */
-header{
+nav{
     position: fixed;
     top: 0;
     left: 0;
@@ -27,7 +27,7 @@ header{
     -ms-transition:0.5s;
     -o-transition:0.5s;
 }
-header .logo{
+nav .logo{
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
@@ -35,15 +35,15 @@ header .logo{
     font-weight: 700;
     letter-spacing: 2px;
 }
-header ul{
+nav ul{
     position: relative;
     display: flex;
 }
-header ul li{
+nav ul li{
     list-style: none;
     position: relative;
 }
-header ul li a{
+nav ul li a{
     position: relative;
     display: inline-block;
     margin: 0 15px;
@@ -52,18 +52,18 @@ header ul li a{
     text-decoration: none;
     color: #fff;
 }
-header ul li a:hover{
+nav ul li a:hover{
     border-bottom: #f5c71a 2px solid;
 }
 
 /* CONTENT BLOCK */ 
-header.shrink{
+nav.shrink{
     background: #fff;
     padding: 10px 100px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
-header.shrink .logo,
-header.shrink ul li a{
+nav.shrink .logo,
+nav.shrink ul li a{
     color: #111;
 }
 
@@ -399,13 +399,13 @@ footer.copyright{
 /* RESPONSIVE CODES */
 @media(max-width: 991px){
 
-    header, header.shrink{
+    nav, nav.shrink{
         padding: 10px 20px;
     }
-    header .menu{
+    nav .menu{
         display: none;
     }
-    header .menu{
+    nav .menu{
         position: fixed;
         background: #fff;
         display: block;
@@ -422,7 +422,7 @@ footer.copyright{
         -ms-transition:0.5s;
         -o-transition:0.5s;
     }
-    header .menu.active{
+    nav .menu.active{
         position: fixed;
         background: #fff;
         display: block;
@@ -433,7 +433,7 @@ footer.copyright{
         height: 100vh;
         text-align: center;
     }
-    header ul li a{
+    nav ul li a{
         font-size: 20px;
         color: #111;
         font-weight: 400;
@@ -466,7 +466,7 @@ footer.copyright{
         background-size: 25px;
         cursor: pointer;
     }
-    header.shrink .toggle{
+    nav.shrink .toggle{
         filter: invert(0);
         -webkit-filter:invert(0);
     }
