@@ -10,6 +10,11 @@
     scroll-behavior: smooth;
 }
 
+section#aboutMe, section#contact .content {
+    max-width: 1300px;
+    margin: auto;
+}
+
 /* HEADER BLOCK */
 nav{
     position: fixed;
